@@ -1,0 +1,415 @@
+.modal {
+    position: fixed;
+    top: 40px;
+    width: 76%;
+    display: block;
+    z-index: 1050;
+    margin: auto;
+    background: white;
+    min-height: 30%;
+    max-height: 75%;
+    left: 7%;
+    right: 7%;
+    overflow: auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background: rgb(0, 0, 0);
+    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #66000000, endColorstr = #66000000);
+    zoom: 1;
+    z-index: 1001;
+}
+
+.greyout {
+    background: rgb(0, 0, 0);
+    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #66000000, endColorstr = #66000000);
+    z-index: 100001;
+}
+
+.flush--top {
+    margin-top: 0;
+    overflow: scroll;
+}
+
+.paginator {
+    width: 912px;
+    margin: 10px auto 10px auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pageInfo {
+    border: #b3b3b3 solid 1px;
+    width: 90px;
+    padding: 3px;
+    text-align: center;
+    margin: auto;
+}
+
+.nextPage {
+    text-align: right;
+    width: 25%;
+    float: left;
+    color: #808080;
+}
+
+.previousPage {
+    text-align: left;
+    width: 25%;
+    float: left;
+    color: #808080;
+}
+
+.red {
+    color: red;
+}
+
+.table {
+    width: 100%;
+    margin: 0 auto 10px auto;
+}
+
+body {
+    width: 100%;
+    font-size: 13px;
+    line-height: 22px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+.table-component {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.table {
+    /*border-left: #cececf solid 1px;*/
+    border-bottom: #cececf solid 1px;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.dataTable {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.dataTable>thead>tr>th {
+    background: #333;
+    /*border-right: #777 solid 1px;*/
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 10px 0;
+    height: 35px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.dataTable>tbody>tr>td {
+    /*border-right: #cececf solid 1px;*/
+    border-top: #cececf solid 1px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    padding: 3px 8px 0;
+    height: 35px;
+    width: auto;
+}
+
+.dataTable>tbody>tr:hover {
+    background: #dedede;
+}
+
+.dataTable>thead>tr>th>a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.topBox {
+    margin: 0 auto 10px;
+    height: 36px;
+    padding: 9px;
+    border: #cececf solid 1px;
+    background: #fff;
+}
+
+.topBox-item {
+    float: left;
+    width: auto;
+    height: 35px;
+    margin: 0 10px 0 0;
+}
+
+.inputBox-input-div {
+    float: left;
+    height: 33px;
+}
+
+.searchBox-input {
+    border: none;
+    font-weight: normal;
+    font-size: 13px !important;
+    color: #666 !important;
+    background: none;
+    height: 25px;
+    padding: 5px 5px 0 10px;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.selectBox {
+    float: left;
+    height: 35px;
+    border: #cececf solid 1px;
+    background: #fafafa;
+}
+
+.select {
+    border: none;
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 35px;
+    padding: 0 10px;
+    background: none;
+    width: 100%;
+    outline: none;
+}
+
+.select:focus {
+    box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -moz-box-shadow: 0 0 5px rgba(0, 143, 255, 1)
+}
+
+.addButton-icon {
+    float: right;
+    width: 20px;
+    height: 26px;
+    margin: 7px 7px 0;
+    background: url(../../../images/add-generic-icon.png) no-repeat;
+}
+
+.tag-container {
+    margin: 0 auto 8px;
+    overflow: auto;
+    -webkit-animation: fadeOut 500ms;
+    -moz-animation: fadeOut 500ms;
+    animation: fadeOut 500ms;
+}
+
+.tag-box {
+    float: left;
+    height: 26px;
+    margin: 0 10px 6px 0;
+    padding: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.tag-text {
+    height: 24px;
+    float: left;
+    padding: 2px 5px 0;
+}
+
+.tag-remove-icon {
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding: 1px 0 0;
+    background: url(../../../images/delete-small.png) no-repeat;
+}
+
+.sortIcon {
+    display: block;
+    padding: 4px;
+    background-repeat: no-repeat !important;
+    background-size: 14px 22px !important;
+}
+
+.both {
+    background: url(../../../images/sort_both.png);
+}
+
+.active-asc {
+    background: url(../../../images/sort_asc.png);
+}
+
+.active-desc {
+    background: url(../../../images/sort_desc.png);
+}
+
+/*datatable changes*/
+
+.table-component {
+    overflow: auto;
+}
+
+.dataTable>tbody>tr>td {
+    height: auto;
+    word-break: break-all;
+    padding-top: 6px;
+    padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.dataTable>tbody>tr:hover {
+    background: #e1e1df;
+}
+
+.dataTable>thead>tr {
+    background: #fafafa;
+    border: solid #333 1px;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dataTable>thead>tr>a {
+    text-decoration: none;
+}
+
+.dataTable>tbody>tr {
+    background: #fafafa;
+    border-left: solid #cececf 1px;
+    border-right: solid #cececf 1px;
+    border-bottom: solid #cececf 1px;
+}
+
+.sortIcon {
+    display: block;
+    padding: 7px;
+    background-repeat: no-repeat !important;
+    background-size: 13px 13px !important;
+    /*background-position-y: 9px;*/
+    /*background-position-x: -4px;*/
+    font-weight: normal;
+    color: #BEBBBB;
+    text-align: left;
+    padding-left: 12px;
+    background-position: 0px 10px;
+}
+
+.table-component .table {
+    margin: 0;
+    border-bottom: #1c1c1c solid 3px;
+}
+
+.inputBox {
+    background: #fafafa;
+}
+
+.inputBox-input-div {
+    float: left;
+    height: 33px;
+}
+
+.searchBox-input {
+    border: none;
+    font-weight: normal;
+    font-size: 13px !important;
+    color: #666 !important;
+    background: none;
+    height: 25px;
+    padding: 5px 5px 0 10px;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.inputBox>div>input {
+    border: none;
+    font-weight: normal;
+    font-size: 13px !important;
+    color: #666 !important;
+    background: none;
+    height: 100%;
+    padding: 0px 5px 0 10px;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    border: #cececf solid 1px;
+}
+
+.inputBox>div>input:focus {
+    box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -moz-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    border: 1px solid rgba(63, 171, 255, 0.77);
+}
+
+.search>div>input {
+    background: url(../../../images/search-generic-icon.png) no-repeat;
+    width: 160px;
+    background-position: 174px;
+    height: 35px;
+    padding-right: 30px;
+}
+
+.search>div>input:focus {
+    -webkit-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -moz-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    border: 1px solid rgba(63, 171, 255, 0.77);
+}
+
+.ns-button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 1px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 37px;
+    width: 100px;
+    color: #eee;
+    background-color: #333;
+    outline: none;
+}
+
+.ns-button:hover {
+    background: #666;
+}
+
+.ns-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -moz-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    border: 1px solid rgba(63, 171, 255, 0.77);
+}

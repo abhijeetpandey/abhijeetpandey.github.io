@@ -1,0 +1,65 @@
+#cc-auto > .cc-autocomplete{
+    position: absolute;
+    list-style: none;
+    display:block;
+    margin:auto;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    float:left;
+    padding:1px 0;
+}
+
+#cc-auto .cc-autocomplete .cc-menu-item{
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+#cc-auto .cc-autocomplete .is-active {
+    background: #00a2ff;
+    color:white;
+}
+
+#cc-auto > .none{
+    display:none;
+}
+
+#cc-auto li {
+    list-style: none;
+}
+
+#cc-auto{
+    height: 35px;
+}
+
+.input>div>input, #cc-auto>input {
+    border: none;
+    font-weight: normal;
+    font-size: 13px !important;
+    color: #666 !important;
+    background: none;
+    height: 100%;
+    padding: 0px 5px 0 10px;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    border: #cececf solid 1px;
+}
+
+.input>div>input:focus, #cc-auto>input:focus {
+    box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    -moz-box-shadow: 0 0 5px rgba(0, 143, 255, 1);
+    border: 1px solid rgba(63, 171, 255, 0.77);
+}
