@@ -1,3 +1,3 @@
 [submodule "embercomponents"]
-	path = embercomponents
+	path = em
 	url = https://github.com/abhijeetpandey/embercomponents.git
