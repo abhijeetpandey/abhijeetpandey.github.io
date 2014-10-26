@@ -1,3 +1,4 @@
+
 [submodule "em"]
 	path = em
-	url = https://github.com/abhijeetpandey/embercomponents.git
+	url = git@github.com:abhijeetpandey/embercomponents.git
